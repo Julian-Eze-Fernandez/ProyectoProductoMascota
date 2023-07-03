@@ -36,6 +36,7 @@ namespace Entidades
         }
         #endregion
 
+
         #region Propiedades
 
         public int Codigo { get; set; }

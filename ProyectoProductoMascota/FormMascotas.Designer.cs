@@ -45,13 +45,14 @@
             this.lbl_Codigo = new System.Windows.Forms.Label();
             this.dgv_Mascotas = new System.Windows.Forms.DataGridView();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.btn_Eliminar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radiobtn_SiCastrada = new System.Windows.Forms.RadioButton();
             this.radiobtn_NoCastrada = new System.Windows.Forms.RadioButton();
             this.groupBox_Vacunada = new System.Windows.Forms.GroupBox();
             this.radiobtn_NoVacuna = new System.Windows.Forms.RadioButton();
             this.radiobtn_SiVacuna = new System.Windows.Forms.RadioButton();
-            this.btn_Eliminar = new System.Windows.Forms.Button();
+            this.btn_Modificar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Mascotas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -214,6 +215,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.btn_Modificar);
             this.splitContainer1.Panel1.Controls.Add(this.btn_Eliminar);
             this.splitContainer1.Panel1.Controls.Add(this.groupBox2);
             this.splitContainer1.Panel1.Controls.Add(this.groupBox_Vacunada);
@@ -239,6 +241,16 @@
             this.splitContainer1.Size = new System.Drawing.Size(1359, 420);
             this.splitContainer1.SplitterDistance = 341;
             this.splitContainer1.TabIndex = 17;
+            // 
+            // btn_Eliminar
+            // 
+            this.btn_Eliminar.Location = new System.Drawing.Point(186, 303);
+            this.btn_Eliminar.Name = "btn_Eliminar";
+            this.btn_Eliminar.Size = new System.Drawing.Size(86, 37);
+            this.btn_Eliminar.TabIndex = 25;
+            this.btn_Eliminar.Text = "Eliminar";
+            this.btn_Eliminar.UseVisualStyleBackColor = true;
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
             // 
             // groupBox2
             // 
@@ -306,15 +318,15 @@
             this.radiobtn_SiVacuna.Text = "Si";
             this.radiobtn_SiVacuna.UseVisualStyleBackColor = true;
             // 
-            // btn_Eliminar
+            // btn_Modificar
             // 
-            this.btn_Eliminar.Location = new System.Drawing.Point(240, 256);
-            this.btn_Eliminar.Name = "btn_Eliminar";
-            this.btn_Eliminar.Size = new System.Drawing.Size(86, 37);
-            this.btn_Eliminar.TabIndex = 25;
-            this.btn_Eliminar.Text = "Eliminar";
-            this.btn_Eliminar.UseVisualStyleBackColor = true;
-            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
+            this.btn_Modificar.Location = new System.Drawing.Point(240, 256);
+            this.btn_Modificar.Name = "btn_Modificar";
+            this.btn_Modificar.Size = new System.Drawing.Size(86, 37);
+            this.btn_Modificar.TabIndex = 26;
+            this.btn_Modificar.Text = "Modificar";
+            this.btn_Modificar.UseVisualStyleBackColor = true;
+            this.btn_Modificar.Click += new System.EventHandler(this.btn_Modificar_Click);
             // 
             // FormMascotas
             // 
@@ -364,5 +376,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox_Vacunada;
         private System.Windows.Forms.Button btn_Eliminar;
+        private System.Windows.Forms.Button btn_Modificar;
     }
 }
